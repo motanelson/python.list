@@ -1,15 +1,15 @@
-a=str('10,20,30,40,50,60,70,80,90,100')
+a=str('hello world,hi,there....')
 l=list(a)
 print("\033c\033[43;30m\n\n")
 ll=[]
 s=""
 for n in l:
-    if n.strip()==",":
-        ll=ll+[int(s)]
+    if n==",":
+        ll=ll+[str(s)]
         s=""
     else:
         s=s+n
-ll=ll+[int(s)]
+ll=ll+[str(s)]
      
 
 print(ll)
