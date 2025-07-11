@@ -1,9 +1,15 @@
-a=str('1 2 3 4 5 6 7 8 9 0')
+a=str('10,20,30,40,50,60,70,80,90,100')
 l=list(a)
 print("\033c\033[43;30m\n\n")
 ll=[]
+s=""
 for n in l:
-    if n.strip()!="":
-        ll=ll+[n.strip()]
-for n in ll:
-    print(n)
+    if n.strip()==",":
+        ll=ll+[int(s)]
+        s=""
+    else:
+        s=s+n
+ll=ll+[int(s)]
+     
+
+print(ll)
