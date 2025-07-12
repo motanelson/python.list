@@ -1,2 +1,1 @@
-# python.list
-python list example
+line list invert order
