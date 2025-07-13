@@ -1,1 +1,1 @@
-line list invert order
+line list  order
